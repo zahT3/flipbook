@@ -26,14 +26,14 @@ SONG = P("inputs/yujian/song.m4a")
 FILM = P("out/yujian/yujian-claw.mp4")
 DATA = json.load(open(P("out/yujian/proof/data.json")))
 
-SONGTI = "/System/Library/Fonts/Supplemental/Songti.ttc"
+WENKAI = P("inputs/fonts/lxgw-wenkai/LXGWWenKai-Medium.ttf")    # LXGW WenKai Medium (OFL 1.1) for all Chinese text
 MENLO = "/System/Library/Fonts/Menlo.ttc"
 _f = {}
 def font(kind, size):
     k = (kind, size)
     if k not in _f:
-        _f[k] = ImageFont.truetype(MENLO if kind.startswith("mono") else SONGTI, size,
-                                   index={"bold": 1, "light": 3, "black": 0, "mono": 0, "monob": 1}[kind])
+        # one weight of WenKai for every Chinese style; the styles differ by size and colour
+        _f[k] = ImageFont.truetype(MENLO, size, index={"mono": 0, "monob": 1}[kind]) if kind.startswith("mono") else ImageFont.truetype(WENKAI, size)
     return _f[k]
 
 # ------------------------------------------------------------------ sources

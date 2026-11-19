@@ -60,7 +60,7 @@ The storyboard, the shot list and seven rounds of review notes (in Chinese) are 
 | Fabric and metal scans from [Poly Haven](https://polyhaven.com) (11 sets) | light/dark, normals and roughness only; colour is ours | CC0 |
 | 13 sound effects | rendered by a local synthesis tool (earshot) | generated |
 | The song, 孙燕姿《遇见》 | soundtrack | commercial, **not included** |
-| macOS Songti font | subtitles | system font |
+| [LXGW WenKai](https://github.com/lxgw/LxgwWenKai) Medium (霞鹜文楷) | subtitles and all Chinese text | SIL OFL 1.1, not included: see [`inputs/fonts/README.md`](inputs/fonts/README.md) |
 
 Not used: downloaded or generated 3D models, image generators or generated textures, video generators. The full list is in [`films/yujian/ASSETS.md`](films/yujian/ASSETS.md) (Chinese).
 
@@ -77,7 +77,7 @@ blender -b --factory-startup -P films/yujian/film.py -- --frames 0-701 --out out
 
 A single drawing is a good first test: `--frames 505 --scale 50 --samples 32`. The full film took about 18 s a drawing on an M-series Mac Studio, about 3.5 hours.
 
-The soundtrack needs your own copy of the song: see [`inputs/yujian/README.md`](inputs/yujian/README.md). Then:
+The soundtrack needs your own copy of the song: see [`inputs/yujian/README.md`](inputs/yujian/README.md). The subtitles need the font: see [`inputs/fonts/README.md`](inputs/fonts/README.md). Then:
 
 ```sh
 python3 films/yujian/mix.py                                                        # -> out/yujian/mix.wav

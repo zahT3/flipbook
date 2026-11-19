@@ -10,7 +10,7 @@
 | painted_metal_shutter | 下载了，没用上 | Poly Haven | CC0 |
 | 13 个音效（clamp、latch、tick、thud、pat、cloth、glass、coin、ding、off、rocker、bulb、flap） | 爪子开合、落地、硬币、开关灯 | 本机 earshot 的音效库，`sfx_render` 合成 | 本机工具生成 |
 | 马达声 | 小车和卷线 | `mix.py` 里用 numpy 合成 | 自己写的 |
-| 字幕字体 宋体-简（Songti SC） | 歌词字幕，烧在画面里 | macOS 自带，`/System/Library/Fonts/Supplemental/Songti.ttc` | 系统字体，随 macOS 授权；公开发布前要确认能不能嵌进视频 |
+| 字体 霞鹜文楷 Medium（LXGW WenKai，v1.530） | 成片歌词字幕、证明短片里的全部中文字 | GitHub lxgw/LxgwWenKai，`inputs/fonts/lxgw-wenkai/`（来源见同目录 `SOURCE.txt`） | SIL OFL 1.1，可以嵌进视频 |
 | 玻璃上的灰、擦痕、指纹、手套印 | 玻璃的脏污贴图 | `make_tex.py` 用 numpy 画的 | 自己写的 |
 
 没有用 `generate_3d`，没有用生成式的贴图，没有从 Sketchfab 或 Poly Pizza 下载模型。用 Blender 建模和渲染，全部由 Python 脚本驱动，没有手动操作（命令行 `blender -b` 运行）。所有模型（布偶、爪子、机器、手套）都是脚本里用球体、方块和管子搭的。

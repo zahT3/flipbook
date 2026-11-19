@@ -60,7 +60,7 @@
 | [Poly Haven](https://polyhaven.com) 的布纹和金属扫描贴图（11 套） | 只取明暗、法线和粗糙度，颜色是自己的 | CC0 |
 | 13 个音效 | 本地的合成工具（earshot）渲出来的 | 生成 |
 | 孙燕姿《遇见》 | 配乐 | 商业歌曲，**不在仓库里** |
-| macOS 宋体 | 字幕 | 系统字体 |
+| [霞鹜文楷](https://github.com/lxgw/LxgwWenKai) Medium | 字幕和全部中文字 | SIL OFL 1.1，不在仓库里，见 [`inputs/fonts/README.md`](inputs/fonts/README.md) |
 
 没有用：下载或生成的 3D 模型、生图模型或生成式贴图、视频生成模型。完整清单见 [`films/yujian/ASSETS.md`](films/yujian/ASSETS.md)。
 
@@ -77,7 +77,7 @@ blender -b --factory-startup -P films/yujian/film.py -- --frames 0-701 --out out
 
 先渲一张试试：`--frames 505 --scale 50 --samples 32`。全片在 M 系列 Mac Studio 上约 18 秒一张，共约 3.5 小时。
 
-配乐要用你自己的歌曲文件，见 [`inputs/yujian/README.md`](inputs/yujian/README.md)。然后：
+配乐要用你自己的歌曲文件，见 [`inputs/yujian/README.md`](inputs/yujian/README.md)；字幕要先下载字体，见 [`inputs/fonts/README.md`](inputs/fonts/README.md)。然后：
 
 ```sh
 python3 films/yujian/mix.py                                                        # -> out/yujian/mix.wav

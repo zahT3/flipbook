@@ -51,6 +51,6 @@
 - Poly Haven 的 CC0 布纹和金属贴图（polar_fleece、curly_teddy_natural、terry_cloth、velour_velvet、wool_boucle、ribbed_corduroy、gingham_check、knitted_fleece、cotton_jersey、blue_metal_plate、metal_plate）：照片扫描，只取明暗、法线和粗糙度，颜色是脚本乘上去的
 - 音效：本机 earshot 音效库合成的 13 个音效；马达声用 numpy 合成
 - 歌：孙燕姿《遇见》（版权歌曲，未获授权）
-- 字幕字体：macOS 自带宋体
+- 字体：霞鹜文楷 Medium（LXGW WenKai，SIL OFL 1.1）
 
 数字：2,643 行 Python；702 张画（每秒 12 张，每张停两帧）；13 只布偶共 171 万根毛；渲染约 6.7 小时机器时间（含作废重渲）；穿模检查 702 张、0 处。
