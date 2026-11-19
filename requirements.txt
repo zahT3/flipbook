@@ -1,0 +1,5 @@
+# Python side (mixing, post, analysis, proof film). Blender brings its own Python for the scene scripts.
+numpy
+pillow
+soundfile
+librosa   # only for analyze.py / vocal_check.py
