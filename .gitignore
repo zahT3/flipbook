@@ -1,10 +1,10 @@
-# rebuilt by scripts
-films/yujian/assets/
-films/yujian/tex/
-out/
+# rebuilt by each film's scripts
+*/films/*/assets/
+*/films/*/tex/
+*/out/
 __pycache__/
 *.pyc
 .DS_Store
-# not ours to publish: bring your own copy (see inputs/yujian/README.md)
-inputs/yujian/*
-!inputs/yujian/README.md
+# songs and lyrics are not ours to publish: bring your own copy (see each film's inputs/*/README.md)
+*/inputs/*/*
+!*/inputs/*/README.md
